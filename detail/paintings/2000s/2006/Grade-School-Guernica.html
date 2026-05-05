@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grade School Guernica – Ron English Catalogue Raisonné</title>
+
+  <meta name="work-id" content="RE-000667" />
+
+  <link rel="stylesheet" href="../../../../css/styles.css" />
+
+  <style>
+    .hero-card,
+    .archive-gallery .ancillary-figure,
+    .ancillary-gallery.documentation-grid .ancillary-figure {
+      margin: 0;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+    }
+
+    .hero-card {
+      margin-bottom: 1.5rem;
+      padding: 0.95rem;
+    }
+
+    .hero-card img,
+    .archive-gallery .ancillary-figure img,
+    .ancillary-gallery.documentation-grid .ancillary-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .hero-card .work-hero {
+      margin: 0;
+    }
+
+    .archive-gallery,
+    .ancillary-gallery.documentation-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      align-items: start;
+      margin-top: 0.85rem;
+    }
+
+    .archive-gallery {
+      max-width: 760px;
+    }
+
+    .ancillary-gallery.documentation-grid {
+      max-width: 920px;
+    }
+
+    .archive-gallery .ancillary-figure a {
+      display: block;
+      text-decoration: none;
+      padding: 0.95rem 0.95rem 0;
+    }
+
+    .archive-gallery .ancillary-figure img {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    .archive-gallery .ancillary-figure figcaption {
+      margin: 0;
+      padding: 0.8rem 0.95rem 1rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure {
+      display: grid;
+      grid-template-columns: minmax(150px, 230px) 1fr;
+      align-items: center;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      padding: 0.85rem;
+      text-decoration: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure img {
+      width: 100%;
+      max-width: 210px;
+      max-height: 170px;
+      height: auto;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption {
+      display: block;
+      margin: 0;
+      padding: 0.95rem 1.05rem;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption a {
+      display: inline;
+      padding: 0;
+      text-decoration: underline;
+    }
+
+    .card-title {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-weight: 650;
+      line-height: 1.35;
+    }
+
+    .card-detail-text {
+      display: block;
+      margin-top: 0.35rem;
+    }
+
+    .card-source {
+      display: block;
+      margin-top: 0.55rem;
+      font-size: 0.86rem;
+      opacity: 0.86;
+      line-height: 1.45;
+    }
+
+    .circulation-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.22rem;
+      margin-top: 0.65rem;
+    }
+
+    .circulation-link {
+      display: block;
+      padding: 0.08rem 0;
+      text-decoration: none;
+      line-height: 1.22;
+    }
+
+    .circulation-link:hover .circulation-title {
+      text-decoration: underline;
+    }
+
+    .circulation-title {
+      display: inline;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .circulation-source {
+      display: inline;
+      font-size: 0.9rem;
+      opacity: 0.72;
+      margin-left: 0.28rem;
+    }
+
+    @media (max-width: 820px) {
+      .archive-gallery,
+      .ancillary-gallery.documentation-grid,
+      .circulation-list {
+        grid-template-columns: 1fr;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure {
+        grid-template-columns: 1fr;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure a {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure img {
+        max-width: 260px;
+        max-height: 190px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Grade School Guernica</h1>
+
+    <nav class="top-nav">
+      <a class="nav-pill" href="../../../../index.html">Home</a>
+      <a class="nav-pill" href="../../../../paintings/1970s.html">1970s</a>
+      <a class="nav-pill" href="../../../../paintings/1980s.html">1980s</a>
+      <a class="nav-pill" href="../../../../paintings/1990s.html">1990s</a>
+      <a class="nav-pill is-active" href="../../../../paintings/2000s.html">2000s</a>
+      <a class="nav-pill" href="../../../../paintings/2010s.html">2010s</a>
+      <a class="nav-pill" href="../../../../paintings/2020s.html">2020s</a>
+      <a class="nav-pill" href="../../../../paintings/2000s/2006/index.html">2006</a>
+    </nav>
+  </header>
+
+  <main class="work-layout">
+    <figure class="hero-card">
+      <img
+        src="../../../../images/Paintings/2000s/2006/Grade-School-Guernica.jpg"
+        alt="Grade School Guernica"
+        class="work-hero"
+        loading="lazy"
+      />
+    </figure>
+
+    <ul class="work-meta" data-work-id="RE-000667">
+      <li><strong>Title:</strong> Grade School Guernica</li>
+      <li><strong>Date:</strong> 2006</li>
+      <li><strong>Medium:</strong> Oil on canvas</li>
+      <li><strong>Dimensions:</strong> 12 × 27 feet</li>
+      <li><strong>Work ID:</strong> RE-000667</li>
+      <li><strong>Signature / marks:</strong> Signed “ENGLISH,” lower right.</li>
+    </ul>
+
+    <section class="section-block">
+      <h2>Exhibitions</h2>
+      <p><em>POWER PATHOS</em>, Station Museum of Contemporary Art, Houston, Texas, US, June 21–September 24, 2006.</p>
+      <p><em>Big Picture Pop</em>, Opera Gallery, New York, New York, US, November 29–December 20, 2007.</p>
+      <p><em>Status Factory – The Art of Ron English</em>, Frank M. Doyle Arts Pavilion (Orange Coast College), Costa Mesa, California, US, November 12–December 17, 2010.</p>
+      <p><em>Ron English – You Are Not Here</em>, International Museum of Art &amp; Science (IMAS), McAllen, Texas, US, March 31–August 14, 2011.</p>
+      <p><em>Guernica</em>, Allouche Gallery, New York, New York, US, September 23–October 19, 2016.</p>
+      <p><em>Reimagining “Guernica” / La réinvention du “Guernica”</em>, Museo de la Paz de Gernika, Gernika-Lumo, Bizkaia, Spain, 2017; the composition was presented as a print on stretched canvas, not as the original painting.</p>
+    </section>
+
+    <section class="section-block">
+      <h2>Literature</h2>
+      <p>Ron English, <em>Abject Expressionism: The Art of Ron English</em> (San Francisco: Last Gasp, 2007), p. 75. ISBN 978-0867196894.</p>
+      <p>Ron English, <em>Son of Pop: Ron English Paints His Progeny</em> (San Francisco, California: 9mm Books and The Shooting Gallery, 2007), p. 87. ISBN 978-0976632511.</p>
+      <p>Don Goede (ed.), <em>Abraham Obama: A Guerrilla Tour Through Art and Politics</em> (San Francisco: Last Gasp, 2009), p. 14. ISBN 978-0867197228.</p>
+      <p>Ron English, <em>Death and the Eternal Forever</em> (Korero Press, 2014), p. 150. ISBN 978-0957664920.</p>
+      <p>Ron English, <em>Original Grin: The Art of Ron English</em> (Paris: Cernunnos, 2019), p. 230. ISBN 978-2374950938.</p>
+    </section>
+
+    <section class="section-block">
+      <h2>Notes</h2>
+
+      <p>
+        According to the printed <em>POWER PATHOS</em> exhibition catalogue, Ron English worked at the Station Museum in the weeks prior to the opening to produce this painting.
+      </p>
+
+      <p>
+        In <em>Original Grin</em>, this work was erroneously reported as 12 × 27 inches.
+      </p>
+
+      <p>
+        The composition references Pablo Picasso’s <em>Guernica</em>.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2>Ron's Personal Photo Archive</h2>
+
+      <div class="archive-gallery">
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Dynamic-Photos/38.station_museum.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Dynamic-Photos/38.station_museum.jpg"
+              alt="Ron English standing with Grade School Guernica at the Station Museum"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Ron English with <em>Grade School Guernica</em> at the Station Museum.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Ancillary Documentation</h2>
+
+      <p>
+        The following materials document the work in exhibition catalogues, museum materials, exhibition photography, video documentation, related reproductions, and wider online circulation.
+      </p>
+
+      <div class="ancillary-gallery documentation-grid">
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Public-Domain/Guernica.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Public-Domain/Guernica.jpg"
+              alt="Pablo Picasso, Guernica"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Pablo Picasso reference image.</span>
+            <span class="card-detail-text">
+              Pablo Picasso, <em>Guernica</em>, 1937. Public domain reference image retained as supporting documentation for the visual/art-historical reference cited in this work.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/grade-school-guernica-power-pathos-catalog.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/grade-school-guernica-power-pathos-catalog.jpg"
+              alt="Catalogue reproduction of Grade School Guernica in POWER PATHOS"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Catalogue reproduction of the work in the printed <em>POWER PATHOS</em> exhibition catalogue.
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/grade-school-guernica-opera-big-picture-pop-catalog.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/grade-school-guernica-opera-big-picture-pop-catalog.jpg"
+              alt="Catalogue reproduction of Grade School Guernica in Big Picture Pop"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Catalogue reproduction of the work in the exhibition catalogue for <em>Big Picture Pop</em>.
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/gradeschool-guernica-museodelapaz-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/gradeschool-guernica-museodelapaz-screenshot.jpg"
+              alt="Screenshot of Museo de la Paz de Gernika’s digital exhibition catalogue showing Grade School Guernica"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Screenshot from Museo de la Paz de Gernika’s digital exhibition catalogue / flip-book for <em>Reimagining “Guernica” / La réinvention du “Guernica”</em>, available
+            <a href="https://www.museodelapaz.eus/en/3d-flip-book/ron-english-guernica-berriro-imajinatzen-reimaginando-el-guernica-eng_fr/" target="_blank" rel="noopener noreferrer">here</a>,
+            captured April 5, 2026.
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/wide-shot-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/wide-shot-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+              alt="Wide exhibition view from Arrested Motion coverage of Status Factory"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Installation view from <em>Arrested Motion</em>’s documentation of <em>Status Factory – The Art of Ron English</em>, available
+            <a href="https://arrestedmotion.com/2010/11/openings-ron-english-status-factory-frank-m-doyle-arts-pavilion/" target="_blank" rel="noopener noreferrer">here</a>,
+            captured April 14, 2026.
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/wide-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/wide-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+              alt="Additional exhibition view from Arrested Motion coverage of Status Factory"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Additional installation view from the same <em>Arrested Motion</em> coverage, available
+            <a href="https://arrestedmotion.com/2010/11/openings-ron-english-status-factory-frank-m-doyle-arts-pavilion/" target="_blank" rel="noopener noreferrer">here</a>,
+            captured April 14, 2026.
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/grade-school-tot-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/grade-school-tot-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+              alt="Detail view from Arrested Motion documentation showing Grade School Guernica"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Detail view from <em>Arrested Motion</em>’s documentation of <em>Status Factory</em>, available
+            <a href="https://arrestedmotion.com/2010/11/openings-ron-english-status-factory-frank-m-doyle-arts-pavilion/" target="_blank" rel="noopener noreferrer">here</a>,
+            captured April 14, 2026.
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/grade-school-oizmendi-video-still.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/grade-school-oizmendi-video-still.jpg"
+              alt="Still frame from Oizmendi Telebista video showing Grade School Guernica"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Still frame at 0:58 from Oizmendi Telebista’s video report on the exhibition, available
+            <a href="https://www.oizmendi.eus/berriak/kultura/ron-english-artistaren-guernica-ren-berrikusketak-ikusgai-daude-kultur-etxean-maiatzaren-21a-bitartean/" target="_blank" rel="noopener noreferrer">here</a>,
+            captured April 23, 2026.
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Prints/grade-school.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Prints/grade-school.jpg"
+              alt="Print reproducing Grade School Guernica"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Print reproducing <em>Grade School Guernica</em>.</span>
+            <span class="card-detail-text">
+              Art Collectorz records this as a First Edition published by Lazarides Editions on June 30, 2011, in an edition of 95. The print is listed as a giclée on Somerset Enhanced Radiant White Satin 330 gsm paper, measuring 49 × 100 cm. Original release price: GBP £225.00, as recorded by Art Collectorz.
+            </span>
+            <span class="card-source">
+              See the edition listing on
+              <a href="https://www.artcollectorz.com/artworks/artwork-detail?artwork_id=10&amp;edition_id=17" target="_blank" rel="noopener noreferrer">Art Collectorz</a>,
+              accessed April 24, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/grade-school-guernica-postcard-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/grade-school-guernica-postcard-screenshot.jpg"
+              alt="Page capture of Museo de la Paz de Gernika’s postcard listing using Grade School Guernica"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Postcard reproducing <em>Grade School Guernica</em>.</span>
+            <span class="card-detail-text">
+              Museo de la Paz de Gernika’s shop listing records this as <em>Postal “Gradeschool Guernica”. Ron English</em>, a postcard connected to the 2017 temporary exhibition <em>Reimagining “Guernica”</em>. Listed price at time of capture: €1.20.
+            </span>
+            <span class="card-source">
+              Available
+              <a href="https://denda.museodelapaz.eus/postales/206-postal-gradeschool-guernica-ron-english-8400000016001.html" target="_blank" rel="noopener noreferrer">here</a>,
+              captured April 23, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/grade-school-veve.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/grade-school-veve.jpg"
+              alt="Page capture of VeVe’s Grade School Guernica 2022 page"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title"><em>Grade School Guernica 2022</em>, VeVe digital collectible / digital print.</span>
+            <span class="card-detail-text">
+              VeVe’s official Ukraine Relief Project announcement identifies this item as a special digital print issued in partnership with Ron English, with net proceeds from the first sale going to the New Zealand Red Cross for Ukraine refugee relief. The drop was scheduled for March 12, 2022, at 8 AM PT, with 4,444 editions, a list price of $100.00, First Edition status, and Secret Rare rarity.
+            </span>
+            <span class="card-source">
+              VeVe listing available
+              <a href="https://www.veve.me/collectibles/en/collectibles/b3d41370-81f9-40aa-8b5e-8b2b9f3ea2fb" target="_blank" rel="noopener noreferrer">here</a>,
+              captured April 16, 2026. Official VeVe announcement available
+              <a href="https://medium.com/veve-collectibles/ron-english-ukraine-relief-project-3b2da6333335" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 24, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/various2-guernica-museo-paz-memchild-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/various2-guernica-museo-paz-memchild-screenshot.jpg"
+              alt="Screenshot of REMEMCHILD’s page on Ron English reimagining Guernica"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Screenshot from REMEMCHILD’s later project page documenting Ron English’s reimagining of <em>Guernica</em>, available
+            <a href="https://rememchild.remigraid.org/en/ron-english-reimaginando-el-guernica/" target="_blank" rel="noopener noreferrer">here</a>,
+            captured April 23, 2026.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Selected Online Circulation</h2>
+
+      <p class="circulation-note">
+        Selected examples of the work’s online circulation, reproduction, or discussion. This list is not exhaustive; it is intended to document representative appearances of the image beyond formal exhibition and publication records.
+      </p>
+
+      <div class="circulation-list">
+        <a class="circulation-link" href="https://m.blog.naver.com/holysjm/30071276609" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Naver post</span>
+          <span class="circulation-source">· m.blog.naver.com</span>
+        </a>
+
+        <a class="circulation-link" href="https://okno.mk/node/39246" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">OKNO</span>
+          <span class="circulation-source">· okno.mk</span>
+        </a>
+
+        <a class="circulation-link" href="https://blog.naver.com/wildshark/221217654799" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Naver post</span>
+          <span class="circulation-source">· blog.naver.com</span>
+        </a>
+
+        <a class="circulation-link" href="https://www.slideshare.net/slideshow/the-popaganda-of-ron-english-the-godfather-of-street-art-powerpoint/36913079?nway-=" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">The Popaganda of Ron English</span>
+          <span class="circulation-source">· SlideShare</span>
+        </a>
+
+        <a class="circulation-link" href="https://eurekart.wordpress.com/category/graphic-design/page/2/" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Graphic Design page</span>
+          <span class="circulation-source">· Eurekart</span>
+        </a>
+
+        <a class="circulation-link" href="https://idread.co.uk/photography/guernica-revisited/" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Guernica Revisited</span>
+          <span class="circulation-source">· idread.co.uk</span>
+        </a>
+
+        <a class="circulation-link" href="https://www.penna.gr/prosopa/12798-oi-gouernikes-tou-ron-english" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Oi Gkouernikes tou Ron English</span>
+          <span class="circulation-source">· Penna</span>
+        </a>
+
+        <a class="circulation-link" href="https://listverse.com/2013/03/02/10-pop-culture-versions-of-famous-paintings/" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">10 Pop Culture Versions of Famous Paintings</span>
+          <span class="circulation-source">· Listverse</span>
+        </a>
+
+        <a class="circulation-link" href="https://www.oldskull.net/design/la-popaganda-de-ron-english/" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">La Popaganda de Ron English</span>
+          <span class="circulation-source">· Old Skull</span>
+        </a>
+
+        <a class="circulation-link" href="https://uwsdes220sp2013.wordpress.com/2013/05/14/ron-english/" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Ron English</span>
+          <span class="circulation-source">· UWS DES 220</span>
+        </a>
+
+        <a class="circulation-link" href="https://art-of-being.livejournal.com/135557.html" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">LiveJournal post</span>
+          <span class="circulation-source">· art-of-being.livejournal.com</span>
+        </a>
+
+        <a class="circulation-link" href="https://www.piercingmetal.com/piercingmetal-attends-english-art-opening-in-nyc/" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">PiercingMetal Attends English's Opening</span>
+          <span class="circulation-source">· PiercingMetal</span>
+        </a>
+
+        <a class="circulation-link" href="https://www.slideshare.net/slideshow/versiones-de-el-guernika-de-pablo-picasso/66689054" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Versiones de El guernika de pablo picasso</span>
+          <span class="circulation-source">· SlideShare</span>
+        </a>
+
+        <a class="circulation-link" href="https://ameblo.jp/co-violet/entry-10718380961.html" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Ameblo post</span>
+          <span class="circulation-source">· ameblo.jp</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
