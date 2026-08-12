@@ -42,7 +42,104 @@
     }
   </style>
   <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-</head>
+
+  <style>
+    .ancillary-gallery.documentation-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      align-items: start;
+      margin: 0.85rem auto 0;
+      max-width: 920px;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure {
+      display: grid;
+      grid-template-columns: minmax(150px, 230px) 1fr;
+      align-items: center;
+      margin: 0;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      padding: 0.85rem;
+      text-decoration: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure img {
+      display: block;
+      width: 100%;
+      max-width: 210px;
+      max-height: 170px;
+      height: auto;
+      object-fit: contain;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption {
+      display: block;
+      margin: 0;
+      padding: 0.95rem 1.05rem;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption a {
+      display: inline;
+      padding: 0;
+      text-decoration: underline;
+    }
+
+    .card-title {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-weight: 650;
+      line-height: 1.35;
+    }
+
+    .card-detail-text {
+      display: block;
+      margin-top: 0.35rem;
+    }
+
+    .card-source {
+      display: block;
+      margin-top: 0.55rem;
+      font-size: 0.86rem;
+      opacity: 0.86;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 820px) {
+      .ancillary-gallery.documentation-grid .ancillary-figure {
+        grid-template-columns: 1fr;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure a {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure img {
+        max-width: 260px;
+        max-height: 190px;
+      }
+    }
+  </style></head>
 
 <body>
   <header class="site-header">
@@ -84,6 +181,10 @@
       <li><strong>Work ID:</strong> RE-000438</li>
       <li><strong>Signature / marks:</strong> Signed “ENGLISH,” lower right.</li>
     </ul>
+    <section class="section-block">
+      <h2>Provenance</h2>
+      <p>Private collection.</p>
+    </section>
 
     <section class="section-block">
       <h2>Literature</h2>
@@ -105,7 +206,33 @@
         </a>
       </div>
     </section>
-<!-- WORK-SEQUENCE-NAV-START -->
+
+    <section class="section-block">
+      <h2>Ancillary Documentation</h2>
+
+      <div class="ancillary-gallery documentation-grid">
+        <figure class="ancillary-figure">
+          <a
+            href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-documentation-images-paintings-4/main/Images/QRFPVEW6__Armand%20-%201999%20-%20Ron%20English%20%E2%80%93%20Revelations%20Book%20II__p001.jpg?v=20260724071411"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-documentation-images-paintings-4/main/Images/QRFPVEW6__Armand%20-%201999%20-%20Ron%20English%20%E2%80%93%20Revelations%20Book%20II__p001.jpg?v=20260724071411"
+              alt="1xRUN Ron English Revelations Book II documentation"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">1xRUN documentation.</span>
+            <span class="card-detail-text">
+              Documentation image from Dan Armand, &ldquo;Ron English &ndash; Revelations Book II,&rdquo; 1xRUN, 1999. Digital source preserved in the Ron English research collection.
+            </span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section><!-- WORK-SEQUENCE-NAV-START -->
 <nav class="top-nav work-sequence-nav" aria-label="Artwork sequence navigation">
   <a class="nav-pill sequence-pill prev-work" href="MC-Sexmas.html">&larr; Previous: MC Sexmas</a>
   <a class="nav-pill sequence-pill next-work" href="Mouse-and-Man.html">Next: Mouse and Man &rarr;</a>
