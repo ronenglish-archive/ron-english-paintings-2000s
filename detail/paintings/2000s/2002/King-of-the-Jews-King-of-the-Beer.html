@@ -24,6 +24,18 @@
   text-align: center !important;
 }
 </style>
+<style>
+  .ancillary-gallery.documentation-grid { display:grid; grid-template-columns:1fr; gap:1rem; align-items:start; margin:0.85rem auto 0; max-width:920px; }
+  .ancillary-gallery.documentation-grid .ancillary-figure { display:grid; grid-template-columns:minmax(150px,230px) 1fr; align-items:center; margin:0; border:1px solid rgba(255,255,255,.16); border-radius:16px; background:rgba(255,255,255,.04); overflow:hidden; }
+  .ancillary-gallery.documentation-grid .ancillary-figure > a { display:flex; align-items:center; justify-content:center; padding:.85rem; min-height:150px; border-right:1px solid rgba(255,255,255,.08); }
+  .ancillary-gallery.documentation-grid .ancillary-figure img { display:block; width:100%; max-width:210px; max-height:170px; height:auto; object-fit:contain; margin:0 auto; border-radius:10px; }
+  .ancillary-gallery.documentation-grid .ancillary-figure figcaption { padding:.95rem 1.05rem; line-height:1.55; text-align:left; }
+  .ancillary-gallery.documentation-grid .card-title { display:block; font-weight:650; margin-bottom:.35rem; }
+  .ancillary-gallery.documentation-grid .card-detail-text { display:block; margin-top:.35rem; }
+  .ancillary-gallery.documentation-grid .card-source { display:block; margin-top:.55rem; font-size:.86rem; opacity:.86; }
+  .ancillary-gallery.documentation-grid figcaption .card-source a { display:inline; padding:0; text-decoration:underline; }
+  @media(max-width:820px) { .ancillary-gallery.documentation-grid .ancillary-figure { grid-template-columns:1fr; } .ancillary-gallery.documentation-grid .ancillary-figure > a { border-right:0; border-bottom:1px solid rgba(255,255,255,.08); } }
+</style>
 </head>
 
 <body>
@@ -64,7 +76,30 @@
       <li><strong>Signature:</strong> No signature observed in available documentation.</li>
     </ul>
 
-<section class="section-block ron-ancillary-documentation ron-ancillary-center-all" data-role="ancillary-documentation" style="text-align:center !important;"><h2 style="text-align:center !important;">Ancillary Documentation</h2><div class="ron-ancillary-grid" style="text-align:center !important;"><a class="ron-ancillary-image-only" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/kingofjews.jpg" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/kingofjews.jpg" alt="Ancillary documentation" loading="lazy"></a></div><div class="literature-entry" style="max-width:360px;margin:16px auto;text-align:center !important;"><p style="text-align:center !important;">Used in <a href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/early-works/late-1980s/works/re-017240.html"><em>Big Top Popaganda — Page 30</em></a>.</p><div class="gallery-grid" style="display:flex;justify-content:center;align-items:center;text-align:center !important;"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/page30.jpg" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/page30.jpg" alt="Big Top Popaganda — Page 30 ancillary documentation" loading="lazy" style="max-width:300px;max-height:310px;width:auto;height:auto;object-fit:contain;display:block;margin:0 auto;"></a></div></div></section>
+<section class="section-block" data-role="ancillary-documentation">
+  <h2>Ancillary Documentation</h2>
+  <div class="ancillary-gallery documentation-grid">
+    <figure class="ancillary-figure">
+      <a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/kingofjews.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/kingofjews.jpg" alt="Graphic composition incorporating King of the Jews, King of the Beer" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="card-title">King of the Jews, King of the Beer â€” graphic composition</span>
+        <span class="card-detail-text">Artist-created graphic composition incorporating this painting.</span>
+      </figcaption>
+    </figure>
+    <figure class="ancillary-figure">
+      <a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/page30.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/page30.jpg" alt="Big Top Popaganda â€” Page 30" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="card-title"><em>Big Top Popaganda</em> â€” Page 30</span>
+        <span class="card-detail-text">Publication page incorporating this painting.</span>
+        <span class="card-source"><a href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/early-works/late-1980s/works/re-017240.html" target="_blank" rel="noopener noreferrer">Source catalogue entry</a></span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
 <!-- WORK-SEQUENCE-NAV-START -->
 <nav class="top-nav work-sequence-nav" aria-label="Artwork sequence navigation">
   <a class="nav-pill sequence-pill prev-work" href="Infant-Ace.html">&larr; Previous: Infant Ace</a>
