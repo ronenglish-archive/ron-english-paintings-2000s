@@ -250,6 +250,33 @@
     box-shadow: none !important;
   }
 </style>
+<!-- BEGIN GUERNICA TRIPTYCH SINGLE-COLUMN HERO FIX -->
+<style id="guernica-triptych-single-column-heroes">
+  /* This page only: override the shared two-column hero-gallery !important rule. */
+  .work-hero-gallery.guernica-triptych-gallery {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 1rem !important;
+    justify-items: center !important;
+    width: 100% !important;
+    max-width: 920px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .work-hero-gallery.guernica-triptych-gallery > .work-hero-link {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .work-hero-gallery.guernica-triptych-gallery > .work-hero-link > .work-hero {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+</style>
+<!-- END GUERNICA TRIPTYCH SINGLE-COLUMN HERO FIX -->
 </head>
 
 <body>
