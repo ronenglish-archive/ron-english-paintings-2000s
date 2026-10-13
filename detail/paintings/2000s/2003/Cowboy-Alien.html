@@ -184,6 +184,36 @@
     box-shadow: none !important;
   }
 </style>
+<style id="ron-cowboy-alien-ancillary-layout-20261013">
+/* Restrict this styling to the two newly added Cowboy Alien reference figures. */
+section[data-role="ancillary-documentation"] .ancillary-gallery.documentation-grid {
+  display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px;
+  width:100%;max-width:920px;margin:14px auto 0;
+}
+section[data-role="ancillary-documentation"] .ancillary-gallery.documentation-grid > .ancillary-figure {
+  box-sizing:border-box;display:flex;flex-direction:column;flex:0 1 300px;
+  width:min(300px,100%);max-width:300px;min-width:0;margin:0;
+  border:1px solid rgba(255,255,255,.16);border-radius:16px;overflow:hidden;
+  background:rgba(255,255,255,.04);
+}
+section[data-role="ancillary-documentation"] .ancillary-gallery.documentation-grid > .ancillary-figure > a {
+  box-sizing:border-box;display:flex;justify-content:center;align-items:center;
+  width:100%;height:255px;padding:10px;margin:0;
+  border:0;border-bottom:1px solid rgba(255,255,255,.08);text-decoration:none;
+}
+section[data-role="ancillary-documentation"] .ancillary-gallery.documentation-grid > .ancillary-figure > a img {
+  display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;
+}
+section[data-role="ancillary-documentation"] .ancillary-gallery.documentation-grid > .ancillary-figure > figcaption {
+  box-sizing:border-box;padding:12px 14px;line-height:1.5;text-align:center;
+}
+section[data-role="ancillary-documentation"] .card-title,
+section[data-role="ancillary-documentation"] .card-detail-text,
+section[data-role="ancillary-documentation"] .card-source {display:block;margin:0 0 6px;}
+section[data-role="ancillary-documentation"] .card-title{font-weight:650;}
+section[data-role="ancillary-documentation"] .card-source{font-size:.86rem;opacity:.86;}
+section[data-role="ancillary-documentation"] .card-source a {display:inline;text-decoration:underline;}
+</style>
 </head>
 
 <body>
@@ -231,6 +261,34 @@
     </section>
 
 
+
+
+<section class="section-block" data-role="ancillary-documentation">
+  <h2>Ancillary Documentation</h2>
+  <div class="ancillary-gallery documentation-grid">
+        <!-- RON-EXXON-ANCILLARY-20261013 -->
+        <figure class="ancillary-figure">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation3/exxonlogo.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation3/exxonlogo.jpg" alt="Exxon logo" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">Exxon logo</span>
+            <span class="card-detail-text">Visual source incorporated into this work.</span>
+          </figcaption>
+        </figure>
+        <!-- RON-TELETUBBIES-ANCILLARY-20261013 -->
+        <figure class="ancillary-figure">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation2/teletubbies-screenshot-IMDb.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation2/teletubbies-screenshot-IMDb.jpg" alt="Teletubbies characters" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">Teletubbies characters</span>
+            <span class="card-detail-text">Popular-culture characters depicted in this work.</span>
+            <span class="card-source"><a href="https://www.imdb.com/title/tt22012456/" target="_blank" rel="noopener noreferrer">IMDb</a></span>
+          </figcaption>
+        </figure>
+  </div>
+</section>
 
 <!-- WORK-SEQUENCE-NAV-START -->
 <nav class="top-nav work-sequence-nav" aria-label="Artwork sequence navigation">
