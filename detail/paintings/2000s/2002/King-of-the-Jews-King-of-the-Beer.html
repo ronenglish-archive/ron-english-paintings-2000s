@@ -97,6 +97,20 @@
   }
 }
 </style>
+<style id="ron-pdoc-five-panels-b01-v1">
+/* Painting detail documentary panels only; retained legacy styles are overridden here. */
+section.ron-pdoc-panel { width:100% !important; max-width:960px !important; box-sizing:border-box !important; margin:22px auto !important; padding:22px !important; border:1px solid #e5e7eb !important; border-radius:18px !important; background:#fff !important; box-shadow:0 4px 16px rgba(0,0,0,.06) !important; color:#222 !important; }
+section.ron-pdoc-panel > h2 { text-align:center !important; margin:0 0 18px !important; }
+section.ron-pdoc-panel .ron-pdoc-items.ancillary-gallery.documentation-grid { display:flex !important; flex-flow:row wrap !important; justify-content:center !important; align-items:flex-start !important; gap:16px !important; width:100% !important; max-width:100% !important; margin:0 auto !important; }
+section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile { flex:0 1 220px !important; display:flex !important; flex-direction:column !important; align-items:stretch !important; width:220px !important; max-width:100% !important; margin:0 !important; padding:0 !important; border:1px solid #e5e7eb !important; border-radius:13px !important; background:#fff !important; overflow:hidden !important; box-shadow:0 2px 9px rgba(0,0,0,.05) !important; color:#222 !important; }
+section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > a { box-sizing:border-box !important; display:flex !important; justify-content:center !important; align-items:center !important; width:100% !important; height:192px !important; min-height:0 !important; padding:9px !important; margin:0 !important; border:0 !important; background:#f7f7f7 !important; }
+section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > a > img { display:block !important; width:100% !important; max-width:100% !important; max-height:174px !important; height:100% !important; object-fit:contain !important; margin:0 auto !important; padding:0 !important; }
+section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption { display:block !important; width:100% !important; box-sizing:border-box !important; padding:10px 11px 12px !important; margin:0 !important; text-align:center !important; font-size:13px !important; line-height:1.4 !important; border:0 !important; background:#fff !important; color:#222 !important; }
+section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption .card-title { display:block !important; font-weight:650 !important; margin:0 !important; }
+section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption .card-detail-text, section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption .card-source { display:block !important; margin-top:5px !important; }
+section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption a { display:inline !important; min-height:0 !important; width:auto !important; padding:0 !important; margin:0 !important; border:0 !important; background:none !important; text-decoration:underline !important; color:inherit !important; }
+@media(max-width:520px){section.ron-pdoc-panel{padding:14px !important;}section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile{flex-basis:210px !important; width:210px !important;}}
+</style>
 </head>
 
 <body>
@@ -137,30 +151,35 @@
       <li><strong>Signature:</strong> No signature observed in available documentation.</li>
     </ul>
 
-<section class="section-block" data-role="ancillary-documentation">
-  <h2>Ancillary Documentation</h2>
-  <div class="ancillary-gallery documentation-grid">
-    <figure class="ancillary-figure">
+<!-- RON-SALLMAN-HEAD-OF-CHRIST-ANCILLARY-V1 -->
+<section class="section-block ron-pdoc-panel" data-role="cultural-artistic-references">
+<h2>Cultural &amp; Artistic References</h2>
+<div class="ancillary-gallery documentation-grid ron-pdoc-items">
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">       <a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/The_Head_of_Christ_by_Warner_Sallman_1941.jpg" target="_blank" rel="noopener noreferrer">         <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/The_Head_of_Christ_by_Warner_Sallman_1941.jpg" alt="Warner Sallman, Head of Christ" loading="lazy" />       </a>       <figcaption>         <span class="card-title">Warner Sallman, <em>Head of Christ</em>, 1940</span>         <span class="card-source"><a href="https://en.wikipedia.org/wiki/Head_of_Christ" target="_blank" rel="noopener noreferrer">Wikipedia</a></span>       </figcaption>     </figure>
+</div>
+</section>
+
+<section class="section-block ron-pdoc-panel" data-role="artist-created-graphic-designs">
+<h2>Artist-Created Graphic Designs</h2>
+<div class="ancillary-gallery documentation-grid ron-pdoc-items">
+<figure data-doc-role="artist-created-graphic-designs" class="ancillary-figure ron-pdoc-tile">
       <a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/kingofjews.jpg" target="_blank" rel="noopener noreferrer">
         <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/kingofjews.jpg" alt="Graphic composition incorporating King of the Jews, King of the Beer" loading="lazy" />
       </a>
       <figcaption>
         <span class="card-title">King of the Jews, King of the Beer &mdash; graphic composition</span>
-        <span class="card-detail-text">Artist-created graphic composition incorporating this painting.</span>
       </figcaption>
     </figure>
-    <figure class="ancillary-figure">
+<figure data-doc-role="artist-created-graphic-designs" class="ancillary-figure ron-pdoc-tile">
       <a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/page30.jpg" target="_blank" rel="noopener noreferrer">
         <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/page30.jpg" alt="Big Top Popaganda &mdash; Page 30" loading="lazy" />
       </a>
       <figcaption>
         <span class="card-title"><em>Big Top Popaganda</em> &mdash; Page 30</span>
-        <span class="card-detail-text">Publication page incorporating this painting.</span>
         <span class="card-source"><a href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/early-works/late-1980s/works/re-017240.html" target="_blank" rel="noopener noreferrer">Source catalogue entry</a></span>
       </figcaption>
     </figure>
-    <!-- RON-SALLMAN-HEAD-OF-CHRIST-ANCILLARY-V1 -->     <figure class="ancillary-figure">       <a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/The_Head_of_Christ_by_Warner_Sallman_1941.jpg" target="_blank" rel="noopener noreferrer">         <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/The_Head_of_Christ_by_Warner_Sallman_1941.jpg" alt="Warner Sallman, Head of Christ" loading="lazy" />       </a>       <figcaption>         <span class="card-title">Warner Sallman, <em>Head of Christ</em>, 1940</span>         <span class="card-detail-text">Visual source incorporated into this work.</span>         <span class="card-source"><a href="https://en.wikipedia.org/wiki/Head_of_Christ" target="_blank" rel="noopener noreferrer">Wikipedia</a></span>       </figcaption>     </figure>
-  </div>
+</div>
 </section>
 <!-- WORK-SEQUENCE-NAV-START -->
 <nav class="top-nav work-sequence-nav" aria-label="Artwork sequence navigation">
