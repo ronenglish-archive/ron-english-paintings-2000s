@@ -245,6 +245,43 @@ section.ron-pdoc-panel[data-role="cultural-artistic-references"] .ron-pdoc-items
  }
 }
 </style>
+<style id="ron-cultural-compact-actual-height-v2">
+/* Compact catalogue reference tiles: width AND actual visual height, not just width. */
+body section.ron-pdoc-panel[data-role="cultural-artistic-references"] .ron-pdoc-items.ancillary-gallery.documentation-grid {
+  display:flex !important; flex-flow:row wrap !important; justify-content:center !important;
+  align-items:flex-start !important; gap:16px !important; grid-template-columns:none !important;
+}
+body section.ron-pdoc-panel[data-role="cultural-artistic-references"] .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile {
+  box-sizing:border-box !important; display:flex !important; flex:0 0 220px !important;
+  flex-direction:column !important; align-self:flex-start !important;
+  width:220px !important; min-width:0 !important; max-width:220px !important;
+  height:auto !important; min-height:0 !important; max-height:none !important;
+  grid-template-columns:none !important; grid-template-rows:none !important;
+  margin:0 !important; padding:0 !important;
+}
+body section.ron-pdoc-panel[data-role="cultural-artistic-references"] .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > a {
+  box-sizing:border-box !important; display:flex !important; flex:0 0 156px !important;
+  justify-content:center !important; align-items:center !important;
+  width:100% !important; height:156px !important; min-height:0 !important; max-height:156px !important;
+  padding:8px !important; margin:0 !important;
+}
+body section.ron-pdoc-panel[data-role="cultural-artistic-references"] .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > a > img {
+  display:block !important; width:100% !important; height:140px !important;
+  min-height:0 !important; max-height:140px !important; object-fit:contain !important;
+  margin:0 auto !important;
+}
+body section.ron-pdoc-panel[data-role="cultural-artistic-references"] .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption {
+  box-sizing:border-box !important; display:flex !important; flex:0 0 auto !important;
+  flex-direction:column !important; justify-content:flex-start !important; align-items:center !important;
+  width:100% !important; height:auto !important; min-height:0 !important; max-height:none !important;
+  margin:0 !important; padding:9px 8px 11px !important; line-height:1.3 !important;
+}
+@media(max-width:540px){
+  body section.ron-pdoc-panel[data-role="cultural-artistic-references"] .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile {
+    flex:0 1 220px !important; width:220px !important; max-width:220px !important;
+  }
+}
+</style>
 </head>
 
 <body>
