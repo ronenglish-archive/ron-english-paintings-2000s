@@ -227,6 +227,45 @@ body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-i
 body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:not(:has(> figure:nth-child(4))) > figure {flex:0 1 265px!important;width:265px!important;max-width:265px!important}
 body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:not(:has(> figure:nth-child(4))) > figure img {max-height:200px!important}
 </style>
+<style id="ron-grin-monotone-wip-cultural-v1">
+/* Only this page's Work in Progress section: center its existing image. */
+body.ron-museum-v2 section:has(> h2:first-child) .gallery-grid:has(img[src*="Grin-Monotone-underpainting.jpg"]) {
+  display:flex !important;flex-wrap:wrap;justify-content:center !important;
+  align-items:center;max-width:960px;margin:0 auto !important;
+}
+body.ron-museum-v2 section .gallery-grid a.gallery-item:has(img[src*="Grin-Monotone-underpainting.jpg"]) {
+  display:block;flex:0 1 420px;max-width:100%;margin:0 auto;
+}
+body.ron-museum-v2 .gallery-grid img[src*="Grin-Monotone-underpainting.jpg"] {
+  display:block;max-width:100%;height:auto;object-fit:contain;margin:0 auto;
+}
+/* Reference panel only: the approved compact centered image-and-caption tile. */
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] {
+  max-width:960px;margin:24px auto;text-align:center;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items {
+  display:flex !important;flex-wrap:wrap;justify-content:center !important;
+  align-items:stretch;gap:16px;margin:16px auto;max-width:960px;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] figure.ron-pdoc-tile {
+  box-sizing:border-box;display:flex !important;flex-direction:column !important;
+  width:240px !important;max-width:100%;padding:12px;border:1px solid #e3e3e3;
+  border-radius:8px;background:#fff;margin:0;overflow:hidden;text-align:center;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] figure.ron-pdoc-tile > a {
+  display:flex !important;width:100%;min-height:0;padding:0;align-items:center;
+  justify-content:center;border:0;background:transparent;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] figure.ron-pdoc-tile img {
+  display:block;max-width:100%;width:auto;height:auto;max-height:220px;
+  object-fit:contain;margin:0 auto;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] figure.ron-pdoc-tile figcaption {
+  display:block !important;padding:10px 2px 2px;text-align:center;background:transparent;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] .card-title,
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] .card-source {display:block}
+</style>
 </head>
 
 <body class="ron-museum-v2">
@@ -250,7 +289,7 @@ body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-i
 
   <main class="work-layout">
 <section class="ron-museum-hero">
-<h1>Green Growth Hormone</h1>
+<h1>Grin Monotone</h1>
     <figure class="hero-card">
       <a class="work-hero-link" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/grinmonotone.jpg" target="_blank" rel="noopener noreferrer">
         <img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/grinmonotone.jpg" alt="Grin Monotone" class="work-hero" loading="lazy" />
@@ -269,6 +308,17 @@ body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-i
 
 <section class="section-block"><h2>Work in Progress</h2><div class="gallery-grid"><a class="gallery-item" href="../../../../images/Paintings/2000s/2009/Grin-Monotone-underpainting.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/2000s/2009/Grin-Monotone-underpainting.jpg" alt="Grin Monotone underpainting documentation" loading="lazy" /></a></div></section>
 
+<section class="section-block ron-pdoc-panel" data-role="cultural-artistic-references">
+  <h2>Cultural &amp; Artistic References</h2>
+  <div class="ancillary-gallery documentation-grid ron-pdoc-items">
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+  <a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation2/Charlie_Brown-screenshot.png" target="_blank" rel="noopener noreferrer">
+    <img src="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation2/Charlie_Brown-screenshot.png" alt="Charlie Brown" loading="lazy" />
+  </a>
+  <figcaption><span class="card-title">Charlie Brown</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/Charlie_Brown" target="_blank" rel="noopener noreferrer">Wikipedia</a></span></figcaption>
+</figure>
+  </div>
+</section>
 <!-- WORK-SEQUENCE-NAV-START -->
 <nav class="top-nav work-sequence-nav" aria-label="Artwork sequence navigation">
   <a class="nav-pill sequence-pill prev-work" href="Green-Growth-Hormone.html">&larr; Previous: Green Growth Hormone</a>
