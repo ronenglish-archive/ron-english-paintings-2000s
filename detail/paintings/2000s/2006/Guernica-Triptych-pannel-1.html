@@ -113,6 +113,47 @@ main{max-width:1180px;margin:0 auto;padding:0 18px 8px}
  .site-footer{margin-top:6px;padding-top:12px}
 }
 @media(max-width:800px){main{padding:0 10px 8px}.site-header{padding:12px 10px 0}.hero-card .painting-mat{padding:7px}}
+/* Guernica Triptych (2006): owner-directed three-panel presentation.
+   One centered panel above, then two side by side. Scoped to this page only. */
+.guernica-triptych-gallery {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  width:100%;
+  max-width:920px;
+  margin:0 auto;
+  align-items:start;
+  justify-items:center;
+}
+.guernica-triptych-gallery > .painting-mat {
+  display:flex;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  margin:0;
+}
+.guernica-triptych-gallery > .painting-mat:first-child {
+  grid-column:1 / -1;
+  width:min(100%,460px);
+}
+.guernica-triptych-gallery > .painting-mat > .mainpainting {
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  object-fit:contain;
+}
+@media (max-width:680px) {
+  .guernica-triptych-gallery {
+    grid-template-columns:minmax(0,1fr);
+    max-width:460px;
+    gap:12px;
+  }
+  .guernica-triptych-gallery > .painting-mat:first-child {
+    grid-column:auto;
+    width:100%;
+  }
+}
 </style></head>
 <body class="">
 <header class="site-header">
@@ -134,7 +175,7 @@ main{max-width:1180px;margin:0 auto;padding:0 18px 8px}
 <section class="hero">
 <h1>Guernica Triptych</h1>
 <figure class="hero-card">
-<div class="work-hero-gallery guernica-triptych-gallery ron-v3-triptych-grid" style="display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;align-items:start;justify-items:center;max-width:920px;margin:0 auto;">
+<div class="work-hero-gallery guernica-triptych-gallery ron-v3-triptych-grid">
 <a class="painting-mat" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/image-viewer.html?src=https%3A%2F%2Fraw.githubusercontent.com%2Fronenglish-archive%2FPainting-Heroes-1%2Fmain%2FRE-000669A-Guernica-Triptych-Left-Panel.png" rel="noopener noreferrer" target="_blank">
 <img alt="Guernica Triptych - left panel" class="mainpainting" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/Painting-Heroes-1/main/RE-000669A-Guernica-Triptych-Left-Panel.png"/>
 </a>
