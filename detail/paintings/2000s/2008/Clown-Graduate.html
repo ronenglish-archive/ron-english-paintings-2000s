@@ -6,15 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Clown Graduate – Ron English Catalogue Raisonné</title>
 <meta content="RE-000892" name="work-id"/>
-
-
 <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
-
-
-
-
-
-
 <style>
 /* Museum Frame: static painting detail layout. */
 *{box-sizing:border-box}html{scroll-behavior:smooth}
@@ -60,13 +52,20 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 .video-tile figcaption{padding:10px 8px 12px;border-top:1px solid #e8e8e8;font-size:13px}
 .site-footer{max-width:680px;font-size:14px;color:#777;margin:24px auto 5px;padding:16px 0;border-top:1px solid #e2e4e8}
 @media(max-width:580px){.wrapper,.site-header{padding:15px 10px}.site-header{padding-bottom:0}.hero,.panel{padding:20px 12px}.site-footer{margin-left:10px;margin-right:10px}}
+
+/* Reference Materials: documented Reference Composition subtype (V6 section 5). */
+[data-reference-kind="composition"] .tileimg{height:145px}
+[data-reference-kind="composition"] .tilecaption{padding:7px 9px 9px}
+[data-reference-kind="composition"] .card-title{line-height:1.35}
+[data-reference-kind="composition"] .card-detail-text{line-height:1.35;margin-top:3px}
+
+/* Common optional components: multipanel artwork and documented reference sizing. */
+.panel-artworks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 auto 24px;align-items:center;justify-items:center}.panel-component{margin:0;width:100%;min-width:0}.panel-component>.painting-mat{width:100%;margin:0;min-width:0}.panel-component .mainpainting{width:100%;height:auto;max-height:550px;object-fit:contain}.panel-artworks.three>.panel-component:first-child{grid-column:1/-1;width:min(100%,460px)}.panel-artworks.side-by-side{grid-template-columns:repeat(3,minmax(0,1fr))}.panel-component figcaption{margin-top:6px;overflow-wrap:anywhere}
+[data-reference-size="220"]{flex-basis:220px;width:220px}[data-reference-size="220"] .tileimg{height:158px}[data-reference-size="220"] .card-detail-text{font-size:11px;line-height:1.35;margin-top:3px}[data-reference-size="220"] .card-title{line-height:1.35}
+@media(max-width:580px){.panel-artworks{gap:9px}.panel-artworks.three>.panel-component:first-child{width:min(100%,350px)}}
 </style>
-
-
-
-
 </head>
-<body class="">
+<body>
 <header class="site-header">
 <nav class="topnav">
 <a class="pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
@@ -79,11 +78,11 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 <a class="pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
 <nav class="topnav">
-<a class="pill year-return-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2000s/paintings/2000s/2008/index.html">← Return to 2008</a>
+<a class="pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2000s/paintings/2000s/2008/index.html">← Return to 2008</a>
 </nav>
 </header>
-<main class="wrapper">
-<section class="hero">
+<main class="wrapper" id="catalogue-content">
+<section class="hero" id="artwork">
 <h1>Clown Graduate</h1>
 <figure class="hero-card">
 <a class="painting-mat" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/image-viewer.html?src=https%3A%2F%2Fraw.githubusercontent.com%2Fronenglish-archive%2FPainting-Heroes-1%2Fmain%2FRE-000892-Clown-Graduate.jpg" rel="noopener noreferrer" target="_blank">
@@ -91,57 +90,57 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 </a>
 </figure>
 <ul class="metadata" data-work-id="RE-000892">
-<li><strong>Title:</strong> Clown Graduate</li>
-<li><strong>Date:</strong> 2008</li>
-<li><strong>Medium:</strong> Oil on canvas</li>
-<li><strong>Dimensions:</strong> 36 × 36 inches</li>
-<li><strong>Work ID:</strong> RE-000892</li>
-<li><strong>Signature:</strong> Signed “ENGLISH,” lower right.</li>
+<li class="metaitem"><strong>Title:</strong> Clown Graduate</li>
+<li class="metaitem"><strong>Date:</strong> 2008</li>
+<li class="metaitem"><strong>Medium:</strong> Oil on canvas</li>
+<li class="metaitem"><strong>Dimensions:</strong> 36 × 36 inches</li>
+<li class="metaitem"><strong>Work ID:</strong> RE-000892</li>
+<li class="metaitem"><strong>Signature:</strong> Signed “ENGLISH,” lower right.</li>
 </ul>
 </section>
-<section class="panel">
-<h2>Exhibitions</h2>
-<p><em>Freaks and Americana: An Exploration of Big Top Culture</em>, Corey Helford Gallery, Culver City, California, US, January 24–February 7, 2015.</p>
+<section class="panel ron-pdoc-panel" data-role="exhibitions" id="exhibitions">
+<h2>Exhibitions</h2><div class="source-section-content"><p><em>Freaks and Americana: An Exploration of Big Top Culture</em>, Corey Helford Gallery, Culver City, California, US, January 24–February 7, 2015.</p></div>
+
 </section>
-<section class="panel">
-<h2>Literature</h2>
-<p>Ron English, <em>Fauxlosophy: The Art of Ron English</em> (San Francisco: Last Gasp, 2016), p. 118. ISBN 978-0867196566.</p>
-<p>Ron English, <em>Original Grin: The Art of Ron English</em> (Paris: Cernunnos, 2019), p. 110. ISBN 978-2374950938.</p>
+<section class="panel ron-pdoc-panel" data-role="literature" id="literature">
+<h2>Literature</h2><div class="source-section-content"><p>Ron English, <em>Fauxlosophy: The Art of Ron English</em> (San Francisco: Last Gasp, 2016), p. 118. ISBN 978-0867196566.</p><p>Ron English, <em>Original Grin: The Art of Ron English</em> (Paris: Cernunnos, 2019), p. 110. ISBN 978-2374950938.</p></div>
+
+
 </section>
-<section class="panel ron-pdoc-panel" data-role="reference-materials">
+<section class="panel ron-pdoc-panel" data-role="reference-materials" id="reference-materials">
 <h2>Reference Materials</h2>
 <div class="work-documentary">
-<figure class="tile" data-doc-role="reference-materials">
+<figure class="tile" data-doc-role="reference-materials" data-reference-kind="set">
 <a href="../../../../images/Paintings/Models/Clown-Graduate-STUDY.jpg" rel="noopener noreferrer" target="_blank">
 <span class="tileimg"><img alt="Reference set" loading="lazy" src="../../../../images/Paintings/Models/Clown-Graduate-STUDY.jpg"/></span>
 </a>
-<div class="tilecaption">
+<figcaption class="tilecaption">
 <span class="card-title">Reference Set</span>
 <span class="card-detail-text">Assembled and photographed by Ron English.</span>
 <span class="card-source"></span>
-</div>
+</figcaption>
 </figure>
 </div>
 </section>
-<section class="panel" data-role="related-works"><h2>Related Works by Ron English</h2><div class="ron-related-subsection"><h3>Used in the Creation of This Painting</h3><div class="ron-related-gallery"><figure class="ron-related-tile"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-mythic-dark/main/images/Sketches/brains/Brain%20Smoke%20%28Bomb%20Brain%29%20ORIGINAL.jpg?v=1" target="_blank" rel="noopener noreferrer"><img alt="Brain Smoke" data-related-artwork-thumb="true" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-mythic-dark/main/images/Sketches/brains/Brain%20Smoke%20%28Bomb%20Brain%29%20ORIGINAL.jpg?v=1"/></a><figcaption data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/brains/entries/re-013111.html" target="_blank" rel="noopener noreferrer">Brain Smoke</a></figcaption></figure>
-<figure class="ron-related-tile"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20241111%20(3).jpg?v=20260614e" target="_blank" rel="noopener noreferrer"><img alt="Brain Lightning" data-related-artwork-thumb="true" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20241111%20(3).jpg?v=20260614e"/></a><figcaption data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/brains/entries/re-014098.html" target="_blank" rel="noopener noreferrer">Brain Lightning</a></figcaption></figure>
-<figure class="ron-related-tile"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/brains/Sin%20of%20Consciousness%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><img alt="Sin of Consciousness" data-related-artwork-thumb="true" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/brains/Sin%20of%20Consciousness%20ORIGINAL.jpg"/></a><figcaption data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/brains/entries/re-014741.html" target="_blank" rel="noopener noreferrer">Sin of Consciousness</a></figcaption></figure>
-<figure class="ron-related-tile"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/captain%20caption%20coloring.jpg?v=20260701p" target="_blank" rel="noopener noreferrer"><img alt="Captain Curious" data-related-artwork-thumb="true" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/captain%20caption%20coloring.jpg?v=20260701p"/></a><figcaption data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/brains/entries/re-016340.html" target="_blank" rel="noopener noreferrer">Captain Curious</a></figcaption></figure>
-<figure class="ron-related-tile"><a href="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/Hats/Team%20Popaganda%20Helmet%202%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><img alt="Starskull Helmet" data-related-artwork-thumb="true" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/Hats/Team%20Popaganda%20Helmet%202%20ORIGINAL.jpg"/></a><figcaption data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-objects/Sketches/objects/wearables-and-accessories/hats/works/re-001741-starskull-helmet.html" target="_blank" rel="noopener noreferrer">Starskull Helmet</a></figcaption></figure>
-<figure class="ron-related-tile"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260616%20%2828%29.jpg?v=20260616b" target="_blank" rel="noopener noreferrer"><img alt="Alfred E Newman Seal" data-related-artwork-thumb="true" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260616%20%2828%29.jpg?v=20260616b"/></a><figcaption data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/Sketches/pop-culture-public-figures/works/re-014062.html" target="_blank" rel="noopener noreferrer">Alfred E Newman Seal</a></figcaption></figure></div></div></section>
-<section class="panel ron-pdoc-panel" data-role="artist-created-graphic-designs">
+<section class="panel ron-pdoc-panel" data-role="related-works-by-ron-english" id="related-works-by-ron-english"><h2>Related Works by Ron English</h2><div class="ron-related-subsection"><h3>Used in the Creation of This Painting</h3><div class="related-gallery"><figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-mythic-dark/main/images/Sketches/brains/Brain%20Smoke%20%28Bomb%20Brain%29%20ORIGINAL.jpg?v=1" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Brain Smoke" data-related-artwork-thumb="true" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-mythic-dark/main/images/Sketches/brains/Brain%20Smoke%20%28Bomb%20Brain%29%20ORIGINAL.jpg?v=1"/></span></a><figcaption class="tilecaption" data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/brains/entries/re-013111.html" rel="noopener noreferrer" target="_blank">Brain Smoke</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20241111%20(3).jpg?v=20260614e" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Brain Lightning" data-related-artwork-thumb="true" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20241111%20(3).jpg?v=20260614e"/></span></a><figcaption class="tilecaption" data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/brains/entries/re-014098.html" rel="noopener noreferrer" target="_blank">Brain Lightning</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/brains/Sin%20of%20Consciousness%20ORIGINAL.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Sin of Consciousness" data-related-artwork-thumb="true" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/brains/Sin%20of%20Consciousness%20ORIGINAL.jpg"/></span></a><figcaption class="tilecaption" data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/brains/entries/re-014741.html" rel="noopener noreferrer" target="_blank">Sin of Consciousness</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/captain%20caption%20coloring.jpg?v=20260701p" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Captain Curious" data-related-artwork-thumb="true" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/captain%20caption%20coloring.jpg?v=20260701p"/></span></a><figcaption class="tilecaption" data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/brains/entries/re-016340.html" rel="noopener noreferrer" target="_blank">Captain Curious</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/Hats/Team%20Popaganda%20Helmet%202%20ORIGINAL.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Starskull Helmet" data-related-artwork-thumb="true" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/Hats/Team%20Popaganda%20Helmet%202%20ORIGINAL.jpg"/></span></a><figcaption class="tilecaption" data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-objects/Sketches/objects/wearables-and-accessories/hats/works/re-001741-starskull-helmet.html" rel="noopener noreferrer" target="_blank">Starskull Helmet</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260616%20%2828%29.jpg?v=20260616b" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Alfred E Newman Seal" data-related-artwork-thumb="true" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260616%20%2828%29.jpg?v=20260616b"/></span></a><figcaption class="tilecaption" data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/Sketches/pop-culture-public-figures/works/re-014062.html" rel="noopener noreferrer" target="_blank">Alfred E Newman Seal</a></figcaption></figure></div></div></section>
+<section class="panel ron-pdoc-panel" data-role="artist-created-graphic-designs" id="artist-created-graphic-designs">
 <h2>Artist-Created Graphic Designs</h2>
 <div class="work-documentary">
-<figure class="tile" data-doc-role="artist-created-graphic-designs"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Life%20in%20debt%20-%20the%20graduate.jpg" target="_blank" rel="noopener noreferrer"><span class="tileimg"><img alt="Clown Graduate ancillary documentation" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Life%20in%20debt%20-%20the%20graduate.jpg"/></span></a></figure>
+<figure class="tile" data-doc-role="artist-created-graphic-designs"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Life%20in%20debt%20-%20the%20graduate.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Clown Graduate ancillary documentation" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Life%20in%20debt%20-%20the%20graduate.jpg"/></span></a><figcaption class="tilecaption"></figcaption></figure>
 </div>
 </section>
 <!-- WORK-SEQUENCE-NAV-START -->
-<nav aria-label="Artwork sequence navigation" class="topnav">
-<a class="pill sequence-pill prev-work" href="Cloud-Cover.html">← Previous: Cloud Cover</a>
-<a class="pill sequence-pill next-work" href="Coral-Snake-Train.html">Next: Coral Snake Train →</a>
+<nav aria-label="Artwork sequence navigation" class="sequence">
+<a class="pill" href="Cloud-Cover.html">← Previous: Cloud Cover</a>
+<a class="pill" href="Coral-Snake-Train.html">Next: Coral Snake Train →</a>
 </nav>
 <!-- WORK-SEQUENCE-NAV-END -->
 </main>
-<footer class="site-footer ron-published-footer-center">Published via GitHub Pages<br/>for long-term public access.</footer>
+<footer class="site-footer">Published via GitHub Pages<br/>for long-term public access.</footer>
 </body>
 </html>
